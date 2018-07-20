@@ -1,0 +1,17 @@
+{
+  "extends": "tslint-config-airbnb",
+  "rules": {
+    "radix": false,
+    "semicolon": [true, "never"],
+    "no-underscore-dangle": false,
+    "import-name": false,
+    "variable-name": false,
+    "max-line-length": [
+      true, {
+        "limit": 120,
+        "ignore-pattern": "^import |^export {(.*?)} | <(path|polygon)"
+      }
+    ],
+    "ter-arrow-parens": [true, "as-needed"]
+  }
+}

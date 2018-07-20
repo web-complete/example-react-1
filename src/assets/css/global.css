@@ -1,0 +1,49 @@
+* {
+    outline: none
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.transition-group {
+    position: relative;
+}
+
+.transition-slide-exit,
+.transition-slide-enter {
+    position: absolute;
+}
+
+.transition-slide-exit {
+    transition: transform 400ms ease-in;
+}
+
+.transition-slide-enter-done {
+    transform: translateY(0);
+    transition: transform 400ms ease-in;
+}
+
+.m-up .transition-slide-enter {
+    transform: translateY(-100%);
+}
+
+.m-up .transition-slide-exit {
+    transform: translateY(100%);
+}
+
+.m-down .transition-slide-enter {
+    transform: translateY(100%);
+}
+
+.m-down .transition-slide-exit {
+    transform: translateY(-100%);
+}
