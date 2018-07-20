@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Provider } from 'react-redux'
 import 'normalize.css/normalize.css'
 
 import 'assets/css/global.css'
@@ -30,7 +29,6 @@ class App extends React.PureComponent<Props, State> {
 
   render() {
     return (
-      <Provider>
         <ThemeProvider theme={theme}>
           <S.Layout>
             <Side nav={nav} onMenuItemClick={this.onMenuItemClick}/>
@@ -39,7 +37,6 @@ class App extends React.PureComponent<Props, State> {
             </S.Main>
           </S.Layout>
         </ThemeProvider>
-      </Provider>
     )
   }
 }
