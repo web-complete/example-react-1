@@ -29,21 +29,26 @@ ul, li {
 
 .transition-slide-enter-done {
     transform: translateY(0);
+    opacity: 1;
     transition: transform 400ms ease-in;
 }
 
 .m-up .transition-slide-enter {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
+    opacity: 0;
 }
 
 .m-up .transition-slide-exit {
-    transform: translateY(100%);
+    transform: translateY(50%);
+    opacity: 0;
 }
 
 .m-down .transition-slide-enter {
-    transform: translateY(100%);
+    transform: translateY(50%);
+    opacity: 0;
 }
 
 .m-down .transition-slide-exit {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
+    opacity: 0;
 }
