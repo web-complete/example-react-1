@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as S from './2ColumnsLayout.styled'
-import ChevronDownIcon from 'react-icons/lib/fa/chevron-down'
+import { ChevronDown } from 'styled-icons/fa-solid'
 
 interface Props {
   backgroundColor?: string
@@ -26,7 +26,7 @@ const TwoColumnsLayout: React.StatelessComponent<Props> = props => (
         {props.content && React.createElement(props.content)}
         <S.MButton
           onClick={props.onClick}
-          icon={<ChevronDownIcon />}
+          icon={<ChevronDown />}
           fontSize={18}>{props.buttonText}
           </S.MButton>
       </S.ContentArea>

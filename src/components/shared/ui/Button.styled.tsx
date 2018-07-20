@@ -5,6 +5,12 @@ const Icon = styled.span`
   bottom: 3px;
   font-size: 18px;
   margin-right: 10px;
+
+  & svg {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
 `
 
 const Text = styled.span`

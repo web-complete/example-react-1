@@ -8,7 +8,6 @@ import * as S from './App.styled'
 import nav from 'config/navigation'
 import Side from './app/Side'
 import Page from './app/Page'
-import store from 'store'
 
 export interface Props {
 }
@@ -31,7 +30,7 @@ class App extends React.PureComponent<Props, State> {
 
   render() {
     return (
-      <Provider store={store}>
+      <Provider>
         <ThemeProvider theme={theme}>
           <S.Layout>
             <Side nav={nav} onMenuItemClick={this.onMenuItemClick}/>
